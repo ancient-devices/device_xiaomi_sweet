@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_sweet.mk
+    $(LOCAL_DIR)/ancient_sweet.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_sweet-eng \
-    nad_sweet-userdebug \
-    nad_sweet-user
+    ancient_sweet-eng \
+    ancient_sweet-userdebug \
+    ancient_sweet-user
