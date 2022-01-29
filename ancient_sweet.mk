@@ -1,3 +1,9 @@
+#
+# Copyright (C) 2021 AncientOS Android Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
 # Inherit common products
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -5,20 +11,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
-# Inherit common ArrowOS configurations
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common AncientOS stuff.
+$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
+ANCIENT_OFFICIAL := true
+ANCIENT_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := arrow_sweet
+PRODUCT_NAME := ancient_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 10 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-DEVICE_MAINTAINER := daniml3
-TARGET_INCLUDE_PIXEL_CHARGER := true
-TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="dipper-user 8.1.0 OPM1.171019.011 V9.5.5.0.OEAMIFA release-keys"

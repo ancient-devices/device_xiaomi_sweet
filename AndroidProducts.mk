@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_sweet.mk
+    $(LOCAL_DIR)/ancient_sweet.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_sweet-eng \
-    arrow_sweet-userdebug \
-    arrow_sweet-user
+    ancient_sweet-eng \
+    ancient_sweet-userdebug \
+    ancient_sweet-user
