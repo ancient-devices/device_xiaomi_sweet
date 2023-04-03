@@ -3,3 +3,6 @@ ro.vendor.audio.sdk.fluencetype=fluence
 
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
+
+# Radio
+persist.sys.radio.force_lte_ca=true
